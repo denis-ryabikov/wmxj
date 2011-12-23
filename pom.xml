@@ -2,14 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>lv.flancer</groupId>
-  <artifactId>wmt</artifactId>
+  <artifactId>wmxj</artifactId>
   <packaging>jar</packaging>
-  <name>wmt</name>
+  <name>wmxj</name>
   <version>0.0.1-SNAPSHOT</version>
   <url>http://maven.apache.org</url>
 
   <build>
-    <finalName>ymapi</finalName>
+    <finalName>wmxj</finalName>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
