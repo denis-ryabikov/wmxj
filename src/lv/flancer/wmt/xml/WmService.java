@@ -139,7 +139,7 @@ public class WmService {
 	private final static String HTTP_CAHRSET = "windows-1251";
 
 	private final static String WMT_HOST_ARBITRAGE = "arbitrage.webmoney.ru";
-	private final static String WMT_HOST_CLASSIC = "w3s.webmoney.ru";
+	protected final static String WMT_HOST_CLASSIC = "w3s.webmoney.ru";
 	private final static String WMT_HOST_LIGHT = "w3s.wmtransfer.com";
 	private final static String WMT_HOST_MERCHANT = "merchant.webmoney.ru";
 	private final static String WMT_HOST_PASSPORT = "passport.webmoney.ru";
@@ -265,7 +265,7 @@ public class WmService {
 	 * @throws IOException
 	 * @throws KwmCorruptedException
 	 */
-	private XmlRequest initSignature(XmlRequest request)
+	protected XmlRequest initSignature(XmlRequest request)
 			throws CannotLoadKeysException, IOException, KwmCorruptedException {
 		request.setSignerWmid(this.signer.getWmid());
 		String signature = this.signer.sign(request.getTextToSign());
@@ -369,7 +369,7 @@ public class WmService {
 	 * @throws KeyStoreException
 	 * @throws UnrecoverableKeyException
 	 */
-	private String sendHttpRequest(String host, String requestAddress,
+	protected String sendHttpRequest(String host, String requestAddress,
 			String requestBody) throws KeyManagementException,
 			NoSuchAlgorithmException, IOException, UnrecoverableKeyException,
 			KeyStoreException, CertificateException {
